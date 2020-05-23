@@ -39,11 +39,3 @@ function changeColor() {
     'rgb(' + red + ',' + green + ',' + blue + ')';
 }
 
-/*
-
-document.querySelector('#redRange').addEventListener('change', changeColor);
-document.querySelector('#greenRange').addEventListener('change', changeColor);
-document.querySelector('#blueRange').addEventListener('change', changeColor);
-document.getElementById('redRange').addEventListener('change', changeColor);
-document.getElementById('greenRange').addEventListener('change', changeColor);
-document.getElementById('blueRange').addEventListener('change', changeColor);*/
