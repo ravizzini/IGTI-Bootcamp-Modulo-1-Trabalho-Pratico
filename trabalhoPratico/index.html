@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <!--<link rel="stylesheet" href="./css/reset.css" />-->
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <title>Trabalho Prático do Módulo 1</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Trabalho Prático do Módulo 1</h1>
+    </header>
+
+    <main>
+      <section id="rgb-control">
+        <header class="control-header">
+          <h2>Manipule o controle para alterar a cor do quadrado</h2>
+        </header>
+
+        <div class="form-container" id="form-container">
+          <form action="" id="form">
+            <div class="color-input">
+              <div class="label-input" id="red-label">
+                <label for="vermelho">(V) Vermelho:</label>
+              </div>
+
+              <div class="range-input">
+                <input
+                  type="range"
+                  id="redRange"
+                  name="vermelho"
+                  value="0"
+                  min="0"
+                  max="255"
+                  oninput="displayVermelhoValue.value=value"
+                  onchange="displayVermelhoValue.value=value"
+                />
+              </div>
+
+              <div id="displayVermelho">
+                <input
+                  type="text"
+                  id="displayVermelhoValue"
+                  class="display-input"
+                  value="0"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div class="color-input">
+              <div class="label-input" id="green-label">
+                <label for="verde" class="label-input">(G) Verde:</label>
+              </div>
+              <div class="range-input">
+                <input
+                  type="range"
+                  name="verde"
+                  id="greenRange"
+                  value="0"
+                  min="0"
+                  max="255"
+                  oninput="displayVerdeValue.value=value"
+                  onchange="displayVerdeValue.value=value"
+                />
+              </div>
+              <div id="displayVerde">
+                <input
+                  type="text"
+                  id="displayVerdeValue"
+                  class="display-input"
+                  value="0"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div class="color-input">
+              <div class="label-input" id="blue-label">
+                <label for="azul" class="label-input">(B) Azul:</label>
+              </div>
+              <div class="range-input">
+                <input
+                  type="range"
+                  name="azul"
+                  id="blueRange"
+                  value="0"
+                  min="0"
+                  max="255"
+                  oninput="displayAzulValue.value=value"
+                  onchange="displayAzulValue.value=value"
+                />
+              </div>
+              <div id="displayAzul">
+                <input
+                  type="text"
+                  id="displayAzulValue"
+                  class="display-input"
+                  value="0"
+                  readonly
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="color-display">
+        <div class="square" id="square">
+          <div class="box" id="box"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Developed by Victor Coelho</p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
