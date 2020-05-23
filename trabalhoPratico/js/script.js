@@ -19,9 +19,9 @@ function start() {
   greenRange = document.querySelector('#greenRange');
   blueRange = document.querySelector('#blueRange');
 
-  redRange.addEventListener('input', changeColor);
-  greenRange.addEventListener('input', changeColor);
-  blueRange.addEventListener('input', changeColor);
+  redRange.addEventListener('change', changeColor);
+  greenRange.addEventListener('change', changeColor);
+  blueRange.addEventListener('change', changeColor);
 
   changeColor();
 }
