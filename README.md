@@ -1,4 +1,5 @@
 # ravizzini-IGTI-Bootcamp-1st-Task-
+Trabalho prático do bootcampo Desenvolvedor FullStack do IGTI.
 Aplicação para a visualização de cores a partir da escala RGB, utilizando HTML, CSS e JavaScript puro.
 Conceitos trabalhados:
 
